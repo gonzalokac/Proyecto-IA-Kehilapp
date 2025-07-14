@@ -12,6 +12,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ollamaLLM = new Ollama({
   model: "llama3:instruct",
   temperature: 0.5,
+  verbose: true
 });
 Settings.llm = ollamaLLM;
 Settings.embedModel = ollamaLLM;
